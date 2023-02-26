@@ -6,10 +6,12 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 16px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --tw-bg-opacity: 1;
+  --n: 218.18 18.033% 11.961%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,5 +24,12 @@
   :root {
     color: #213547;
     background-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: hsl(var(--n)/var(--tw-bg-opacity));
   }
 }
